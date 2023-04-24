@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+
+}
+
+body{
+    background-color: #000000;
+    color: #ffffff;
+}
+
+
+
+
+
+.nosotros{
+    text-decoration: none;
+    list-style: none;
+    height: 100vh;
+    width: 100%;
+    background-image: url(../assets/Parallax-2500x1035px.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background-color: #000000;
+    
+}
+
+
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+
+
+
+}
+
+.navbar {
+    list-style: none;
+}
+
+.navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #ababab;
+    font-weight: 680;
+    padding: 15px;
+    transition: all 1.3s ease;
+
+
+}
+
+.navbar li a:hover {
+    color: #2f1089;
+    box-shadow: 1px 1px 11px 1px #714ae4;
+}
+
+.tittle{
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.main-index{
+    width: 100%;
+    height: 100vh;
+
+}
+
+.productos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    gap: 20px;
+    width: 100%;
+    height: 100vh;
+}
+
+
+
+.card-productos {
+    text-align: center;
+    border: 1px solid #000000;
+    background-color:  #FFD700 ;
+    box-shadow: 1px 1px 11px 1px #333333;
+    height: 35vh;
+    width: 100%;
+    border-radius: 25px;
+    transition: .5s;
+}
+
+.card-productos:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 5px 25px #2d1084;
+}
+
+
+
+.card-productos img {
+    display: block;
+    margin: 0 auto;
+}
+
+.tittleh2{
+    font-size: 35px;
+    text-align: center;
+}
+
+
+
+.card-productos{
+    align-items: center;
+    color: #ffffff;
+    justify-content: center;
+}
+
+.card-productos a:hover {
+    color: #ffffff;
+    transition: color 0s 0.25s
+}
+.redes {
+    display: flex;
+    align-items: self-start;
+
+}
+
+.mouse{
+    color: #2d1084;
+    align-items: center;
+    
+    
+}
+
+.tittleh3{
+    font-size: 30px;
+    color:  #FFD700 ;
+    text-align: center
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;700;900&family=Raleway:wght@100;300;500;700&display=swap');
+
+:root{
+    --bodyBack: #000000;
+    --textColor: #2d1084;
+    --starColor: #000000;
+    --sectionBack: #2d1084;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+.xcontainer-productos{
+    background-color: black;
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+}
+.contenido{
+    width: 80vw;
+    height:80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.header-index{
+    width: 100%;
+    text-align: center;
+}
+.header-index h1{
+    font-size: 3em;
+    text-transform: uppercase;
+    color:  #FFD700 ;
+    text-align: center;
+}
+.products{
+    width: 100%;
+    align-self: center;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.product{
+    position: relative;
+    background-color: #FFD700;
+    width: 380px;
+    height: 60vh;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .3);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 20px 40px;
+    border-radius: 10px;
+    transition: .3s;
+}
+.product:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.image{
+    width:100%;
+    height: 80%;
+    display: grid;
+    place-content: center;
+}
+.image img{
+    width: 350px;
+}
+.namePrice{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+.namePrice h3{
+    font-size: 2em;
+    text-transform: capitalize;
+    color: black;
+    padding-top: -80%;
+}
+.namePrice span{
+    font-size: 1.0em;
+    color: var(--starColor);
+}
+.product p{
+    font-size: 28px;
+    line-height: 25px;
+    color: black;
+}
+
+.buy{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+.buy button{
+    padding: 10px 20px;
+    border-radius: 7px;
+    border: none;
+    background-color: rgb(0, 0, 0);
+    color: #fbff00;
+    font-size: 14px;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: .5s;
+}
+.buy button:hover{
+    transform: scale(1.2);
+}
+.puntos-de-venta{
+    height: 100vh;
+    width: 100%;
+}
+.contenedor{
+    display: grid;
+    width: 90%;
+    margin: 20px auto;
+    max-width: 1000px;
+    grid-template-columns: (7, 1fr);
+    grid-template-rows: (12, 1fr);
+}

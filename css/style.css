@@ -10,18 +10,20 @@
 }
 
 body{
-    background-color: #2d1084;
+    background-color: #000000;
     color: #ffffff;
 }
 
 .header{
-    background-color: #000;
+    background-color: #000000;
+    height: 107px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     text-decoration: none;
     list-style: none;
 }
+
 .navbar {
     display: flex;
     flex-direction: row;
@@ -33,31 +35,31 @@ body{
 .navbar li a {
     text-decoration: none;
     font-size: 16px;
-    color: #ababab;
+    color: #676767;
     font-weight: 680;
     padding: 15px;
-    transition: all 1.3s ease;
+    transition: all 1.0s ease;
 }
 .navbar li a:hover {
     color: #ffffff;
-    box-shadow: 1px 1px 11px 1px #FFD700;
+    box-shadow: 1px 1px 11px 1px #ff0000;
 }
 
 .main-index{
     display: grid;
     grid-template-columns: repeat(6,1fr);
-    grid-template-rows: repeat(3,1fr);
+    grid-template-rows: repeat(3,175px);
 }
 .tittleh2{
-    grid-column:  1 / 6;
+    grid-column:  2 / 6;
     grid-row: 1 / 2;
-    color: yellow;
+    color: #ff0000;
     font-size: 25px;
     justify-self: center;
     align-self: center;
 }
 .tittleh3{
-    grid-column:  1 / 6;
+    grid-column:  2 / 6;
     grid-row: 1 / 2;
     color: rgb(255, 255, 255);
     text-align: center;
@@ -78,16 +80,16 @@ body{
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 .prod-style{
     position: relative;
     box-shadow: none;
-    border-radius: 15px;
+    border-radius: 25px;
     transform-origin: center;
     overflow: hidden;
-    background-color: #FFD700;
-    border: 2px solid #FFD700;
+    background-color: #ff2222;
+    border: 2px solid #ff0000;
     width: 180px;
 }
 .card-productos{
@@ -106,7 +108,7 @@ body{
     font-size: 18px;
     padding-bottom: 25px;
     text-decoration: none;
-    color: #000;
+    color: #000000;
 }
 
 /* .card-productos{
@@ -132,7 +134,10 @@ body{
     margin: 0 auto;
 } */
 
-
+.titulo-prod{
+    text-align: center;
+    font-size: 40px;
+}
 
 .products{
     width: 100%;
@@ -143,10 +148,9 @@ body{
     flex-wrap: wrap;
     gap: 40px;
 }
-
 .product{
     position: relative;
-    background-color: #FFD700;
+    background-color: #ff0000;
     width: 380px;
     height: 60vh;
     box-shadow: 0 5px 20px rgba(0, 0, 0, .3);
@@ -188,7 +192,7 @@ body{
 .product p{
     font-size: 28px;
     line-height: 25px;
-    color: black;
+    color: #FF8E00;
 }
 
 .buy{
@@ -201,7 +205,7 @@ body{
     border-radius: 7px;
     border: none;
     background-color: rgb(0, 0, 0);
-    color: #fbff00;
+    color: #ff0000;
     font-size: 14px;
     text-transform: capitalize;
     cursor: pointer;
@@ -209,10 +213,6 @@ body{
 }
 .buy button:hover{
     transform: scale(1.2);
-}
-.puntos-de-venta{
-    height: 100vh;
-    width: 100%;
 }
 
 .btn btn-outline-success{
@@ -227,7 +227,7 @@ body{
 .main-nosotros{
     display: grid;
     grid-template-columns: repeat(8,1fr);
-    grid-template-rows: repeat(5,1fr);
+    grid-template-rows: repeat(5,105px );
     align-self: center;
 }
 .manifiesto-0{
@@ -260,5 +260,18 @@ body{
     justify-self: center;
 }
 .footer{
-
+    height: 80px;
+    width: auto;
+    background-color: #000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2px;
+    font-size: 20px;
 }

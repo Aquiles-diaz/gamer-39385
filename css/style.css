@@ -5,25 +5,19 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    
-
 }
-
 body{
     background-color: #000000;
     color: #ffffff;
 }
-
 .header{
-    background-color: #000000;
-    height: 107px;
+    height: 110px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     text-decoration: none;
     list-style: none;
 }
-
 .navbar {
     display: flex;
     flex-direction: row;
@@ -34,7 +28,7 @@ body{
 }
 .navbar li a {
     text-decoration: none;
-    font-size: 16px;
+    font-size: 17px;
     color: #676767;
     font-weight: 680;
     padding: 15px;
@@ -44,8 +38,10 @@ body{
     color: #ffffff;
     box-shadow: 1px 1px 11px 1px #ff0000;
 }
-
 .main-index{
+    background-image: url(../assets/imagen-de-fondo.jpg);
+    background-size: cover;
+    overflow: hidden;
     display: grid;
     grid-template-columns: repeat(6,1fr);
     grid-template-rows: repeat(3,175px);
@@ -65,14 +61,12 @@ body{
     text-align: center;
     padding-top: 140px;
 }
-
 .container-prod{
     grid-column: 2/6 ;
     grid-row: 2/5;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    
 }
 .productos{
     height: 70%;
@@ -91,24 +85,27 @@ body{
     background-color: #ff2222;
     border: 2px solid #ff0000;
     width: 180px;
+    backdrop-filter: blur(25px);
+     box-shadow: 0 5px 20px rgba(0, 0, 0, .3);
 }
 .card-productos{
     text-align: center;
-    /* backdrop-filter: blur(25px); */
+     
 }
-
 .card-cuerpo h2{
     margin: 0 0 18px 0;
     font-size: 25px;
     border-bottom: 1px solid #414141b6;
     border-top: 1px solid #414141b6;
 }
-
 .card-cuerpo a{
     font-size: 18px;
     padding-bottom: 25px;
     text-decoration: none;
-    color: #000000;
+    color: #2a2a2a;
+}
+.card-cuerpo a:hover{
+    color: rgb(214, 214, 214);
 }
 
 /* .card-productos{
@@ -225,6 +222,9 @@ body{
 
 }
 .main-nosotros{
+    background-image: url(../assets/imagen-de-fondo.jpg);
+    background-size: cover;
+    overflow: hidden;
     display: grid;
     grid-template-columns: repeat(8,1fr);
     grid-template-rows: repeat(5,105px );
@@ -260,7 +260,7 @@ body{
     justify-self: center;
 }
 .footer{
-    height: 80px;
+    height: 77px;
     width: auto;
     background-color: #000;
     display: flex;
@@ -274,4 +274,100 @@ body{
     justify-content: center;
     padding: 0 2px;
     font-size: 20px;
+    flex-wrap: wrap;
+    color: rgba(97, 97, 97, 0.753);
+}
+.bx{
+    font-size: 40px;
+    color: #ff0000;
+}
+.puntos-de-venta{
+    display: flex;
+    background-image: url(../assets/fondo-3.jpg);
+}
+.main-pdv{
+    background-image: url(../assets/fondo.ns.jpg);
+    background-size: cover;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(5,105px );
+    align-self: center;
+}
+.tittle-mouse-pdv{
+    grid-column: 2/8;
+    grid-row: 1/2;
+    align-self: center;
+    justify-self: center;
+    font-size: 30px;
+}
+.manifiesto-tittle-pdv{
+    grid-column: 3/8;
+    grid-row: 2/5;
+    font-size: 35px;
+}
+.enlaces-pdv{
+    grid-column: 6/8;
+    grid-row: 4/5;
+}
+.enlaces-2-pdv{
+    grid-column: 3/8;
+    grid-row: 4/5;
+}
+.consulta{
+    background-image: url(../assets/fondo.ns.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+.compras{
+    font-size: 35px;
+    text-align: center;
+}
+.ventas{
+    font-size: 35px;
+    text-align: center;
+}
+.ayuda-cuenta{
+    text-align: center;
+    font-size: 35px;
+}
+.boton{
+    color: #424242d0;
+    text-align: center;
+    width: 160px;
+    height: 30px;
+    border-radius: 50px;
+}
+
+.boton:hover{
+    color: #050505;
+    transition: 0.9s ease;
+    box-shadow: 1px 4px 4px 1px #7b7b7b;
+}
+@media(max-width:1024px){
+    header{
+        width: 90%;
+    }
+    .tittleh2{
+    font-size: 20px;
+    }
+    .container-prod{
+        grid-column: 2 / 6 ;
+        grid-row: 2 / 5;
+    }
+
+}
+@media(max-width:768px){
+    header{
+        font-size: 7px;
+    }
+    .container-prod{
+        grid-column: 2 / 6 ;
+        align-self: center;
+        grid-row: 2 / 5;
+    }
+    .tittleh2{
+        font-size: 15px;
+        }
 }

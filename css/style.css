@@ -89,7 +89,6 @@ body{
 }
 .card-productos{
     text-align: center;
-     
 }
 .card-cuerpo h2{
     margin: 0 0 18px 0;
@@ -107,35 +106,12 @@ body{
     color: rgb(214, 214, 214);
 }
 
-/* .card-productos{
-    text-align: center;
-    border: 1px solid #000000;
-    background-color:  #FFD700 ;
-    box-shadow: 1px 1px 11px 1px #333333;
-    border-radius: 25px;
-    transition: .5s;
-    align-items: center;
-    color: #ffffff;
-    justify-content: center;
-}
-.card-productos:hover{
-    transform: translateY(-15px);
-    box-shadow: 0 5px 25px #2d1084;
-    color: #ffffff;
-    transition: color 0s 0.25s
-}
-
-.card-productos img {
-    display: block;
-    margin: 0 auto;
-} */
-
 .titulo-prod{
     text-align: center;
     font-size: 40px;
 }
 
-.products{
+.products{                              /*COMIENZA LA PAGINA PRODUCTOS*/
     width: 100%;
     align-self: center;
     height: 70%;
@@ -219,7 +195,7 @@ body{
     display: flex;
     align-items: self-start;
 
-}
+}                       /*arranca la pagina main*/
 .main-nosotros{
     background-image: url(../assets/imagen-de-fondo.jpg);
     background-size: cover;
@@ -267,6 +243,7 @@ body{
     justify-content: space-around;
     align-items: center;
 }
+
 .link{
     display: flex;
     align-items: center;
@@ -280,39 +257,10 @@ body{
     font-size: 40px;
     color: #ff0000;
 }
-.puntos-de-venta{
-    display: flex;
-    background-image: url(../assets/fondo-3.jpg);
-}
-.main-pdv{
-    background-image: url(../assets/fondo.ns.jpg);
-    background-size: cover;
-    overflow: hidden;
-    display: grid;
-    grid-template-columns: repeat(8,1fr);
-    grid-template-rows: repeat(5,105px );
-    align-self: center;
-}
-.tittle-mouse-pdv{
-    grid-column: 2/8;
-    grid-row: 1/2;
-    align-self: center;
-    justify-self: center;
-    font-size: 30px;
-}
-.manifiesto-tittle-pdv{
-    grid-column: 3/8;
-    grid-row: 2/5;
-    font-size: 35px;
-}
-.enlaces-pdv{
-    grid-column: 6/8;
-    grid-row: 4/5;
-}
-.enlaces-2-pdv{
-    grid-column: 3/8;
-    grid-row: 4/5;
-}
+                            /*Termina la pagina de NOSOTROS*/
+
+                            
+                              /*empieza la pagina de AYUDA*/
 .consulta{
     background-image: url(../assets/fondo.ns.jpg);
     background-size: cover;
@@ -342,7 +290,7 @@ body{
 .boton:hover{
     color: #050505;
     transition: 0.9s ease;
-    box-shadow: 1px 4px 4px 1px #7b7b7b;
+    box-shadow: 1px 4px 4px 1px #ff0000;
 }
 @media(max-width:1440px){
     .container-prod{
@@ -365,7 +313,7 @@ body{
     }
     .tittleh2{
         grid-column:  1 / 10;
-        grid-row: 1 / 2;
+        grid-row: 2 / 2;
         color: #ffffff;
         font-size: 20px;
         justify-self: center;
@@ -380,7 +328,7 @@ body{
         padding-top: 140px;
     }
 }
-
+                                        /*Arranca con Media Query*/
 @media(max-width:768px){
     header{
         flex-direction: column;
@@ -417,7 +365,6 @@ body{
 
     }
 }
-
     @media(max-width:425px){
         .main-index{
             grid-template-columns: 1fr;

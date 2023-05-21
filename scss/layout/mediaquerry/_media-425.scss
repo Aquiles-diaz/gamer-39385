@@ -1,0 +1,45 @@
+@media(max-width:425px){
+    .main-index{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(9,175px);
+    }
+    .tittleh2{
+       font-size: 12px;
+    }
+    .tittleh3{
+        font-size: 14px;
+    }
+    .simb{
+        display: none;
+    }
+    .container-prod{
+        grid-row: 3 / 9;
+    }
+    .header{
+            height: 154px;
+    }
+    .navbar li a{
+        gap: 0;
+        font-size: 12px;                              
+    }
+    .titulo-prod{
+        font-size: 25px;
+        
+    }
+    .product{
+        width: 308px;
+        height: 55vh;
+    }
+    .namePrice h3{
+        font-size: 18px;
+    }
+    .image img{
+        width: 315px;
+        
+    }
+    .link{
+        display: flex;
+        align-items: center;
+    }
+
+}

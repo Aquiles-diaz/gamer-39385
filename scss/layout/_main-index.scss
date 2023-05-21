@@ -1,0 +1,70 @@
+.main-index {
+  background-image: url(../assets/wp8092690-gaming-keyboards-wallpapers.jpg);
+    background-size: cover;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(5, 175px);
+    .tittleh2 {
+      grid-column: 2 / 9;
+      grid-row: 1 / 2;
+      color: $background-tercero;
+      font-size: 30px;
+      justify-self: center;
+      align-self: center;
+      color: rgb(0, 195, 195);
+    }
+    .tittleh3 {
+      grid-column: 2 / 9;
+      grid-row: 1 / 2;
+      color: $background-tercero;
+      text-align: center;
+      padding-top: 285px;
+      color: #ffffff;
+    }
+    .container-prod {
+      grid-column: 2 / 9;
+      grid-row: 4 / 5;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      .productos {
+        height: 70%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap:20px;
+        color: $background-secundario;
+        .prod-style {
+          position: relative;
+          box-shadow: none;
+          border-radius: 25px;
+          transform-origin: center;
+          overflow: hidden;
+          background-color: $background-principal;
+          border: 2px solid $background-principal;
+          width: 180px;
+          backdrop-filter: blur(25px);
+          box-shadow: 0 5px 20px #ffffff4d;
+          .card-productos {
+            text-align: center;
+            .card-cuerpo h2{
+              margin: 0 0 18px 0;
+              font-size: 25px;
+              border-bottom: 1px solid #414141b6;
+              border-top: 1px solid #414141b6;
+            }
+            .card-cuerpo a {
+              font-size: 18px;
+              padding-bottom: 25px;
+              text-decoration: none;
+              color: #000000;
+              &:hover {
+                color: #ffffff;
+              }
+            }
+          }
+        }
+      }
+    }
+  }

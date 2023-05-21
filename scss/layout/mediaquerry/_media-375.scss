@@ -1,0 +1,32 @@
+@media(max-width:375px){
+    .header{
+        height: 212px;
+    }
+    .navbar{
+        display: flex;
+        flex-direction: column;
+    }
+    .menu{
+        flex-direction: column;
+    }
+    .tittleh2{
+        font-size: 10px;
+    }
+    .tittleh3{
+        font-size: 13px;
+    }
+    .titulo-prod{
+        font-size: 22px;
+    }  
+    .product{
+        width: 308px;
+        height: 55vh;
+    }
+    .namePrice h3{
+        font-size: 20px;
+    }
+    .image img{
+        width: 315px;
+        
+    }
+}

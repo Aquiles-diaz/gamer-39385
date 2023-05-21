@@ -1,0 +1,39 @@
+.consulta{
+    background-image: url(../assets/esteva.jpg.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    .compras{
+        font-size: 40px;
+        text-align: center;
+        color: $background-tercero;
+    }
+    .ventas{
+        font-size: 40px;
+        text-align: center;
+        color: $background-tercero;
+    }
+    .ayuda-cuenta{
+        text-align: center;
+        font-size: 25px;
+        color: $background-tercero;
+    }
+    .boton{
+        background-color: rgb(143, 143, 143);
+        color: #000000d0;
+        text-align: center;
+        width: 160px;
+        height: 30px;
+        border-radius: 50px;
+    }
+    
+    .boton:hover{
+        color: #050505;
+        transition: 0.9s ease;
+        box-shadow: 4px 4px 4px 4px #ff8b8b;
+    }
+    
+}
+
+
+

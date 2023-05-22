@@ -1,51 +1,64 @@
 @media (max-width: 768px) {
-  header {
+  .header {
     flex-direction: column;
-    text-align: center;
-    justify-content: center;
+    img {
+      width: 120px;
+      margin-top: 14px;
+    }
+    .navbar {
+      display: flex;
+      gap: 0px;
+      align-items: center;
+      list-style: none;
+      li a {
+        text-decoration: none;
+        font-size: 14px;
+        color: #ffffff68;
+        font-weight: 680;
+        transition: all 1s ease;
+        &:hover {
+          color: #ffffff;
+          box-shadow: 1px 1px 11px 1px #000000;
+          border-radius: 20px;
+        }
+      }
+    }
   }
-  .container-prod {
-    grid-column: 1 / 10;
-    align-self: center;
-    grid-row: 4 / 5;
+    .main-index {
+      grid-template-rows: repeat(6, 175px);
+      .tittleh2 {
+        font-size: 13px;
+        grid-column: 1 / 10;
+      }
+      .tittleh3 {
+        grid-column: 1 / 10;
+        grid-row: 2 / 3;
+        align-self: start;
+        padding-top: 25px;
+        font-size: 17px;
+      }
+      .container-prod {
+        grid-column: 1 / 10;
+        align-self: center;
+        grid-row: 4 / 5;
+      }
+    }
+    .main-productos {
+      .titulo-prod {
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        padding-top: 40px;
+      }
+      .product {
+        width: 300px;
+        height: 45vh;
+      }
+      .namePrice h3 {
+        font-size: 15px;
+      }
+      .image img {
+        width: 310px;
+      }
+    }
   }
-  .tittleh2 {
-    font-size: 18px;
-    grid-column: 1 / 10;
-    grid-row: 1 / 2;
-  }
-  .tittleh3 {
-    grid-column: 1 / 10;
-    grid-row: 2 / 3;
-    align-self: start;
-    padding-top: 0;
-    font-size: 17px;
-  }
-  .main-index {
-    grid-template-rows: repeat(6, 175px);
-  }
-  .navbar {
-    gap: 0;
-    padding: 0 1px;
-  }
-  .navbar li a {
-    gap: 0;
-    font-size: 14px;
-  }
-  .titulo-prod {
-    font-size: 18px;
-    display: flex;
-    justify-content: center;
-    padding-top: 40px;
-  }
-  .product {
-    width: 300px;
-    height: 45vh;
-  }
-  .namePrice h3 {
-    font-size: 15px;
-  }
-  .image img {
-    width: 310px;
-  }
-}

@@ -1,8 +1,8 @@
 @media (max-width: 425px) {
-  .header{
+  .header {
     min-height: 70px;
     display: flex;
-    .navbar{
+    .navbar {
       display: flex;
       flex-direction: column;
       gap: 10px;
@@ -26,21 +26,29 @@
       grid-row: 3 / 9;
     }
   }
-  .titulo-prod {
-    font-size: 25px;
+  .main-productos {
+    .products .product{
+      width: 300px;
+    }
+    .products .image img{
+      width: 300px;
+    }
+    h3{
+      font-size: 20px;
+    }
+    .product {
+      width: 308px;
+      height: 55vh;
+    }
+    .namePrice h3 {
+      font-size: 18px;
+    }
+    .image img {
+      width: 315px;
+    }
   }
-  .product {
-    width: 308px;
-    height: 55vh;
+  .simb{
+    display: none;
   }
-  .namePrice h3 {
-    font-size: 18px;
-  }
-  .image img {
-    width: 315px;
-  }
-  .link {
-    display: flex;
-    align-items: center;
-  }
+
 }

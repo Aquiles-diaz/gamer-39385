@@ -12,7 +12,7 @@
     font-size: 30px;
     justify-self: center;
     align-self: center;
-    color: rgb(0, 195, 195);
+    color: rgb(0, 214, 214);
     
   }
   .tittleh3 {
@@ -43,15 +43,16 @@
         border-radius: 25px;
         transform-origin: center;
         overflow: hidden;
-        background-color: $background-principal;
+        background-color: #009f85;
         border: 2px solid $background-principal;
         width: 180px;
         backdrop-filter: blur(25px);
         box-shadow: 0 5px 20px #ffffff4d;
         &:hover{
+          box-shadow: 1px 1px 11px 1px #00ff5e;
           background-color: transparent;
           color: $background-principal;
-          transition: all .3s ease;
+          transition: all .7s ease;
         }
         .card-productos {
           text-align: center;

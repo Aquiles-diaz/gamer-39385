@@ -1,12 +1,14 @@
 .main-pdv {
   background-image: url(https://images.unsplash.com/photo-1620121692029-d088224ddc74?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1332&q=80);
+  background-position: center;
+  background-size: cover;
   .h1-pdv {
-    color: #eee;
+    color: $background-tercero;
     font-size: 40px;
     display: flex;
     justify-content: center;
     text-align: center;
-    margin-top: 10px;
+    
   }
   .txt-pdv {
     margin: 20px;
@@ -126,7 +128,7 @@
   }
 
   .text-copy:nth-child(5) {
-    stroke: #fff;
+    stroke: #190069;
     animation-delay: -5s;
   }
 

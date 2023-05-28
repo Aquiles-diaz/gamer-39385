@@ -39,12 +39,10 @@ body {
         border-radius: 20px; }
 
 .footer {
-  background: #007a7a;
   background: linear-gradient(90deg, #007a7a 0%, #003a35 44%, #001a1b 100%);
   display: flex;
   justify-content: space-around;
-  background-color: black;
-  color: black;
+  color: white;
   text-align: center; }
   .footer .link {
     display: flex;
@@ -53,10 +51,10 @@ body {
     padding: 0 2px;
     font-size: 18px;
     flex-wrap: wrap;
-    color: aqua; }
+    color: #00c5c5; }
     .footer .link .bx {
-      font-size: 40px;
-      color: #00ffdd; }
+      font-size: 45px;
+      color: #1fb5b5; }
 
 .main-index {
   background-image: url(../assets/wp8092690-gaming-keyboards-wallpapers.jpg);
@@ -105,6 +103,10 @@ body {
         width: 180px;
         backdrop-filter: blur(25px);
         box-shadow: 0 5px 20px #ffffff4d; }
+        .main-index .container-prod .productos .prod-style:hover {
+          background-color: transparent;
+          color: #00ffdd;
+          transition: all .3s ease; }
         .main-index .container-prod .productos .prod-style .card-productos {
           text-align: center; }
           .main-index .container-prod .productos .prod-style .card-productos .card-cuerpo h2 {
@@ -115,9 +117,9 @@ body {
             font-size: 18px;
             padding-bottom: 25px;
             text-decoration: none;
-            color: #000000; }
+            color: white; }
             .main-index .container-prod .productos .prod-style .card-productos .card-cuerpo a:hover {
-              color: #ffffff; }
+              color: #00ffdd; }
 
 .main-nosotros {
   background-image: url(../assets/fondito.jpg.jpg);
@@ -217,12 +219,29 @@ body {
     color: #00d5ff; }
 
 .main-pdv {
-  background-color: black; }
+  background-image: url(https://images.unsplash.com/photo-1620121692029-d088224ddc74?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1332&q=80); }
   .main-pdv .h1-pdv {
     color: #eee;
     font-size: 40px;
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px; }
+  .main-pdv .txt-pdv {
+    margin: 20px;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: white; }
+  .main-pdv .txt-pdv2 {
+    margin: 10px;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 70px;
+    color: white; }
   .main-pdv .container {
     display: flex;
     justify-content: center; }
@@ -240,7 +259,6 @@ body {
       display: block; }
     .main-pdv .container .boton-c:hover {
       background-position: right center;
-      /* change the direction of the change here */
       color: #fff;
       text-decoration: none; }
   .main-pdv .boton-d {
@@ -257,9 +275,47 @@ body {
     display: block; }
   .main-pdv .boton-d:hover {
     background-position: right center;
-    /* change the direction of the change here */
     color: #fff;
     text-decoration: none; }
+  .main-pdv body {
+    background: transparent;
+    font-family: "poppins"; }
+  .main-pdv .container {
+    display: flex;
+    height: 100%;
+    align-items: center; }
+  .main-pdv svg {
+    display: block;
+    font: 10.5em "Poppins";
+    width: 660px;
+    height: 300px;
+    margin: 0 auto; }
+  .main-pdv .text-copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 5px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.5s infinite linear; }
+  .main-pdv .text-copy:nth-child(1) {
+    stroke: #006d5b;
+    animation-delay: -1; }
+  .main-pdv .text-copy:nth-child(2) {
+    stroke: #00f2ff;
+    animation-delay: -2s; }
+  .main-pdv .text-copy:nth-child(3) {
+    stroke: #00f2ff;
+    animation-delay: -3s; }
+  .main-pdv .text-copy:nth-child(4) {
+    stroke: #00c1b4;
+    animation-delay: -4s; }
+  .main-pdv .text-copy:nth-child(5) {
+    stroke: #fff;
+    animation-delay: -5s; }
+
+@keyframes stroke-offset {
+  100% {
+    stroke-dashoffset: -35%; } }
 
 .consulta {
   background-image: url(../assets/esteva.jpg.jpg);
@@ -413,13 +469,13 @@ body {
   .main-index .tittleh2 {
     grid-column: 1 / 10;
     grid-row: 2 / 3;
-    font-size: 10px; }
+    font-size: 9px; }
   .main-index .tittleh3 {
-    font-size: 16px; }
+    font-size: 12px; }
   .main-index .titulo-prod {
     font-size: 22px; }
   .main-productos h3 {
-    font-size: 20px; }
+    font-size: 18px; }
   .main-productos .product {
     width: 308px;
     height: 55vh; }

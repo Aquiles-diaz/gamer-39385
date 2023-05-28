@@ -1,54 +1,138 @@
 .main-pdv {
-  background-color: rgb(0, 0, 0);
+  background-image: url(https://images.unsplash.com/photo-1620121692029-d088224ddc74?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1332&q=80);
   .h1-pdv {
     color: #eee;
     font-size: 40px;
     display: flex;
     justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .txt-pdv {
+    margin: 20px;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: $background-tercero;
+  }
+  .txt-pdv2 {
+    margin: 10px;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 70px;
+    color: $background-tercero;
   }
   .container {
     display: flex;
-    justify-content: center;    
-               
+    justify-content: center;
+
     .boton-c {
-        background-image: linear-gradient(to right, #00ccff 0%, #0088ff  51%, #00ff99  100%);
-        margin-top: 30px;
-        padding: 15px 45px;
-        text-align: center;
-        text-transform: uppercase;
-        transition: 0.5s;
-        background-size: 200% auto;
-        color: white;            
-        box-shadow: 0 0 20px #004b41;
-        border-radius: 10px;
-        display: block;
-
-      }
-
-      .boton-c:hover {
-        background-position: right center; /* change the direction of the change here */
-        color: #fff;
-        text-decoration: none;
-      }
+      background-image: linear-gradient(
+        to right,
+        #00ccff 0%,
+        #0088ff 51%,
+        #00ff99 100%
+      );
+      margin-top: 30px;
+      padding: 15px 45px;
+      text-align: center;
+      text-transform: uppercase;
+      transition: 0.5s;
+      background-size: 200% auto;
+      color: white;
+      box-shadow: 0 0 20px #004b41;
+      border-radius: 10px;
+      display: block;
     }
-    .boton-d {
-        background-image: linear-gradient(to right, #006e72 0%, #00564d  51%, #00ff99  100%);
-        margin-top: 30px;
-        padding: 15px 45px;
-        text-align: center;
-        text-transform: uppercase;
-        transition: 0.5s;
-        background-size: 200% auto;
-        color: white;            
-        box-shadow: 0 0 20px #004b41;
-        border-radius: 10px;
-        display: block;
 
-      }
-      .boton-d:hover {
-        background-position: right center; /* change the direction of the change here */
-        color: #fff;
-        text-decoration: none;
-      }
-      
+    .boton-c:hover {
+      background-position: right center; 
+      color: #fff;
+      text-decoration: none;
+    }
   }
+  .boton-d {
+    background-image: linear-gradient(
+      to right,
+      #006e72 0%,
+      #00564d 51%,
+      #00ff99 100%
+    );
+    margin-top: 30px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #004b41;
+    border-radius: 10px;
+    display: block;
+  }
+  .boton-d:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+  }
+  body {
+    background: transparent;
+    font-family: "poppins";
+  }
+
+  .container {
+    display: flex;
+    height: 100%;
+    align-items: center;
+  }
+
+  svg {
+    display: block;
+    font: 10.5em "Poppins";
+    width: 660px;
+    height: 300px;
+    margin: 0 auto;
+  }
+
+  .text-copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 5px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.5s infinite linear;
+  }
+
+  .text-copy:nth-child(1) {
+    stroke: #006d5b;
+    animation-delay: -1;
+  }
+
+  .text-copy:nth-child(2) {
+    stroke: #00f2ff;
+    animation-delay: -2s;
+  }
+
+  .text-copy:nth-child(3) {
+    stroke: #00f2ff;
+    animation-delay: -3s;
+  }
+
+  .text-copy:nth-child(4) {
+    stroke: #00c1b4;
+    animation-delay: -4s;
+  }
+
+  .text-copy:nth-child(5) {
+    stroke: #fff;
+    animation-delay: -5s;
+  }
+
+  @keyframes stroke-offset {
+    100% {
+      stroke-dashoffset: -35%;
+    }
+  }
+}

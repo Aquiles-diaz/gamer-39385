@@ -16,10 +16,19 @@
     padding: 0 2px;
     font-size: 18px;
     flex-wrap: wrap;
-    color: #00c5c5;
-    .bx {
-      font-size: 45px;
-      color: #1fb5b5;
+    img{
+      padding-top: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      height: 70px;
+      width: 60px;
+      font-size: 40px;
+      transition-duration: 0.5s;
+    }
+    img:hover{
+      transform: translate(0, -10%);
     }
   }
 }

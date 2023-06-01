@@ -1,44 +1,44 @@
-.main-nosotros{
-    background-image: url(../assets/fondito.jpg.jpg);
-    background-size: cover;
-    overflow: hidden;
-    display: grid;
-    grid-template-columns: repeat(8,1fr);
-    grid-template-rows: repeat(5,108px );
+.main-nosotros {
+  background-image: url(../assets/fondito.jpg.jpg);
+  background-size: cover;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(10, 108px);
+  align-self: center;
+  .manifiesto-0 {
+    color: $background-tercero;
+    grid-column: 2/8;
+    grid-row: 1/2;
     align-self: center;
-    .manifiesto-0{
-        color: $background-tercero;
-        grid-column: 2/8;
-        grid-row: 1/2;
-        align-self: center;
-        justify-self: center;
+    justify-self: center;
+  }
+  .manifiesto-1 {
+    color: $background-tercero;
+    grid-column: 2/8;
+    grid-row: 2/3;
+  }
+  .manifiesto-2 {
+    color: $background-tercero;
+    grid-column: 2/8;
+    grid-row: 3/4;
+  }
+  .manifiesto-3 {
+    color: $background-tercero;
+    grid-column: 2/8;
+    grid-row: 4/5;
+  }
+  .manifiesto-4 {
+    color: $background-tercero;
+    grid-column: 2/8;
+    grid-row: 7/8;
+    align-self: center;
+    justify-self: center;
+    span {
+      color: $background-principal;
     }
-    .manifiesto-1{
-        color: $background-tercero;
-        grid-column: 2/8;
-        grid-row: 2/3;
+    img{
+      width: 190px;
     }
-    .manifiesto-2{
-        color: $background-tercero;
-        grid-column: 2/8;
-        grid-row: 3/4;
-    
-    }
-    .manifiesto-3{
-        color: $background-tercero;
-        grid-column: 2/8;
-        grid-row: 4/5;
-    }
-    .manifiesto-4{
-        color: $background-tercero;
-        grid-column: 2/8;
-        grid-row: 5/6;
-        align-self: center;
-        justify-self: center;
-        span{
-            color: $background-principal;
-            
-        }
-    
-    }
+  }
 }

@@ -15,30 +15,20 @@
   }
   .manifiesto-1 {
     color: $background-tercero;
+    font-size: 15px;
     grid-column: 2/8;
     grid-row: 2/3;
-  }
-  .manifiesto-2 {
-    color: $background-tercero;
-    grid-column: 2/8;
-    grid-row: 3/4;
-  }
-  .manifiesto-3 {
-    color: $background-tercero;
-    grid-column: 2/8;
-    grid-row: 4/5;
+    .subra{
+      color: aqua;
+    }
   }
   .manifiesto-4 {
-    color: $background-tercero;
-    grid-column: 2/8;
+    grid-column: 4/8;
     grid-row: 7/8;
-    align-self: center;
-    justify-self: center;
-    span {
-      color: $background-principal;
-    }
-    img{
-      width: 190px;
+    color: aqua;
+    .img-nosotros {
+      position: relative;
+      left: -100px;
     }
   }
 }

@@ -45,22 +45,34 @@
       grid-row: 4 / 5;
     }
   }
-  .main-productos {
-    .titulo-prod h3{
-      font-size: 25px;
-      display: flex;
-      justify-content: center;
-      padding-top: 40px;
+  .main-nosotros {
+    grid-template-rows: repeat(9, 175px);
+    .manifiesto-4 {
+      grid-column: 4/8;
+      grid-row: 8/8;
+      color: aqua;
+      .img-nosotros {
+        position: relative;
+        left: -185px;
+      }
     }
-    .product{
-      width: 180px;
-      height: 45vh;
-    }
-    .namePrice{
-      font-size: 10px;
-    }
-    .image img {
-      width: 360px;
+    .main-productos {
+      .titulo-prod h3 {
+        font-size: 25px;
+        display: flex;
+        justify-content: center;
+        padding-top: 40px;
+      }
+      .product {
+        width: 180px;
+        height: 45vh;
+      }
+      .namePrice {
+        font-size: 10px;
+      }
+      .image img {
+        width: 360px;
+      }
     }
   }
 }

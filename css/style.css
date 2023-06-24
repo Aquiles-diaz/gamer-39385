@@ -360,7 +360,7 @@ body {
 
 @media (max-width: 1024px) {
   .main-nosotros .manifiesto-1 {
-    grid-row: 2/4;
+    grid-row: 2/9;
     font-size: 5px; }
   .main-nosotros .manifiesto-4 {
     grid-row: 8/8; }
@@ -435,7 +435,7 @@ body {
     grid-template-rows: repeat(9, 175px); }
     .main-nosotros .manifiesto-4 {
       grid-column: 4/8;
-      grid-row: 8/8;
+      grid-row: 8/9;
       color: aqua; }
       .main-nosotros .manifiesto-4 .img-nosotros {
         position: relative;
@@ -490,6 +490,9 @@ body {
     width: 315px; }
   .simb {
     display: none; } }
+
+.main-nosotros {
+  grid-template-rows: 9, 1fr; }
 
 @media (max-width: 375px) {
   .header {

@@ -1,38 +1,36 @@
 const productos=[
-    {nombre: "1", descripcion: "teclado tanker RAINBOW T-TGK106", precio: 18500},
-    {nombre: "2", descripcion: "teclado naxos T-TGK310", precio: 30000 },
-    {nombre: "3", descripcion: "teclado bora  RAINBOW T-TGK313",precio: 17800 },
-    {nombre: "4", descripcion: "teclado arena T-TGK321-RGB",precio: 38000 },
-    {nombre: "5", descripcion: "teclado bora RGB T-TGK315",precio: 32000},
-    {nombre: "6", descripcion: "teclado arena T-TGK321",precio: 183000 },
+    {nombre: "1", descripcion: "TECLADO TANKER RAINBOW T-TGK106", precio: 18500},
+    {nombre: "2", descripcion: "tECLADO NAXOS T-TGK310", precio: 30000 },
+    {nombre: "3", descripcion: "TECLADO BORA RAINBOW T-TGK313",precio: 17800 },
+    {nombre: "4", descripcion: "TECLADO ARENA T-TGK321-RGB",precio: 38000 },
+    {nombre: "5", descripcion: "TECLADO BORA RGB T-TGK315",precio: 32000},
+    {nombre: "6", descripcion: "TECLADO BORA ARENA T-TGK321",precio: 183000 },
 ]
 
 let carrito =[]
-
-let sel= prompt ("¿Desea comprar algun producto SI o NO?");
-
+alert("¡Hola Somos De ADRX Technology! Marcar con un SI o NO y aguarde un momento");
+let sel= prompt ("¿Quiere comprar algun producto ADRX Si o No?");
 while(sel != "si" && sel != "no") 
 {
-    alert("Por favor ingresar SI o NO");
-    sel = prompt ("¿Desea comprar algun producto SI o NO?");
+  let  sel = prompt ("¿Desea Comprar Algun Producto?");
 }
 
 if(sel == "si")
 {
-    alert ("Listado de Productos");
-    let todoslosProductos = productos.map((productos)=> `${productos.nombre} ${productos.descripcion}  \$ ${productos.precio}`);
-    alert(todoslosProductos.join(" - "));
+    alert ("Lista  de Productos ADRX Technology");
+    let todoslosTeclados = productos.map((productos)=> `${productos.nombre} ${productos.descripcion}  \$ ${productos.precio}`);
+    alert(todoslosTeclados.join(" - "));
 }
 else if(sel == "no")
 {
-    alert("Gracias por su visita, regrese pronto!!");
+    alert("Gracias por su visita y Confiar en ADRX  vuelva pronto!");
 }
 while(sel != "no")
 {
-    let producto = prompt ("agraga un producto a tu carrito");
+    let producto = prompt ("Agregar  un producto a tu Carrito y se tomara tu Pedido Inmediatamente");
     let precio = 0;
 
-    if(producto == "1" || producto == "2" || producto == "3" || producto == "4" || producto == "5" || producto == "6" || producto == "7" || producto == "8" || producto == "9")
+    if(producto == "1" || producto == "2" || producto == "3" || producto == "4" || producto == "5" || producto == "6")
     {
        switch (producto) 
        {
@@ -66,7 +64,7 @@ while(sel != "no")
     sel = prompt ("¿Desea continuar comprando?");
     while (sel == "no")
     {
-        alert("Gracias por su compra");
+        alert("¡Gracias por su compra Regrese Pronto!");
         carrito.forEach((carritoFinal) => 
         {
              console.log(`producto: ${carritoFinal.producto}, undades: ${carritoFinal.unidades},
@@ -79,5 +77,5 @@ while(sel != "no")
 const total = carrito.reduce((acc, el) => acc + el.precio * el.unidades, 0);
 console.log (`El total a pagar por la compra es: ${total}`);
 
-alert("El total de su compra es:" + total);
+alert("El total de su compra es: " + total);
 

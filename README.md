@@ -1,6 +1,5 @@
 # Mi Proyecto Final
 > este es mi proyecto que muestra una pagina web dedicada al mundo del gaming y ventas de perifericos para los fanaticos de los juegos.
-## Comisión 39385
 ### IDEA PRINCIPAL
 La idea del *Proyecto* fue realizar el sitio Web de una Tienda llamada *ADRX TECHNOLOGY*. La misma es ficticia y se la ubica en la Ciudad de Rosario Santa Fe.
 ### HERRAMIENTAS UTILIZADAS
